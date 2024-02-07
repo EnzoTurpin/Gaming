@@ -1,0 +1,114 @@
+[
+  {
+    "id": "1",
+    "name": "Red Dead Redemption 2",
+    "description": "Plongez dans le Far West impitoyable du début du XXe siècle avec Red Dead Redemption 2.",
+    "price": "20.09",
+    "image": "./assets/img/Red_Dead_Redemption_2.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Grand Theft Auto 5",
+    "description": "Découvrez les vastes étendues de Los Santos et Blaine County dans le jeu ultime de Grand Theft Auto V.",
+    "price": "10.29",
+    "image": "./assets/img/Grand_Theft_Auto_5.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Fallout 4",
+    "description": "Explorez un monde post-apocalyptique rempli de dangers dans Fallout 4.",
+    "price": "7.79",
+    "image": "./assets/img/Fallout_4.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Minecraft",
+    "description": "Bâtissez, explorez et survivez dans ce monde de blocs infini avec Minecraft.",
+    "price": "18.59",
+    "image": "./assets/img/Minecraft.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Cyberpunk 2077",
+    "description": "Plongez-vous dans l'avenir dystopique de Night City avec Cyberpunk 2077.",
+    "price": "33.59",
+    "image": "./assets/img/Cyberpunk_2077.jpg"
+  },
+  {
+    "id": "6",
+    "name": "Subnautica",
+    "description": "Survivez dans un monde sous-marin alien rempli de merveilles et de dangers avec Subnautica.",
+    "price": "21.99",
+    "image": "./assets/img/Subnautica.jpg"
+  },
+  {
+    "id": "7",
+    "name": "Detroit: Become Human",
+    "description": "Façonnez le destin de trois personnages vivant dans un futur où les androides ressemblent aux humains.",
+    "price": "9.29",
+    "image": "./assets/img/Detroit_Become_Human.jpg"
+  },
+  {
+    "id": "8",
+    "name": "Assassin's Creed Mirage",
+    "description": "Vivez l'histoire d'un maître assassin dans le riche contexte historique de Bagdad avec Assassin's Creed Mirage.",
+    "price": "28.99",
+    "image": "./assets/img/Assassin_s_Creed_Mirage.jpg"
+  },
+  {
+    "id": "9",
+    "name": "Forza Horizon 5",
+    "description": "Découvrez des paysages époustouflants et une conduite ouverte dans le Mexique magnifique avec Forza Horizon 5.",
+    "price": "40.59",
+    "image": "./assets/img/Forza_Horizon_5.jpg"
+  },
+  {
+    "id": "10",
+    "name": "Elden Ring",
+    "description": "Embarquez dans une aventure dans un monde rempli de mystères et de dangers avec Elden Ring.",
+    "price": "29.89",
+    "image": "./assets/img/Elden_Ring.jpg"
+  },
+  {
+    "id": "11",
+    "name": "Hitman: World of Assassination",
+    "description": "Devenez le maître assassin dans un monde d'espionnage et de conspirations avec Hitman: World of Assassination.",
+    "price": "21.49",
+    "image": "./assets/img/Hitman_World_of_Assassination.jpg"
+  },
+  {
+    "id": "12",
+    "name": "Hogwarts Legacy",
+    "description": "Explorez le monde de Harry Potter comme jamais auparavant dans Hogwarts Legacy.",
+    "price": "25.49",
+    "image": "./assets/img/Hogwarts_Legacy.jpg"
+  },
+  {
+    "id": "13",
+    "name": "Lethal Company",
+    "description": "Combattez pour survivre et établir votre dominance dans le monde impitoyable de Lethal Company.",
+    "price": "9.19",
+    "image": "./assets/img/Lethal_Company.jpg"
+  },
+  {
+    "id": "14",
+    "name": "Dead By Daylight",
+    "description": "Survivez ensemble... ou pas. Échappez au tueur dans Dead By Daylight.",
+    "price": "9.29",
+    "image": "./assets/img/Dead_By_Daylight.jpg"
+  },
+  {
+    "id": "15",
+    "name": "Tekken 8",
+    "description": "Affrontez vos adversaires dans le prochain chapitre de la saga de combat avec Tekken 8.",
+    "price": "45.79",
+    "image": "./assets/img/Tekken_8.jpg"
+  },
+  {
+    "id": "16",
+    "name": "Watch Dogs Legion",
+    "description": "Menez la résistance contre l'oppression dans un futur proche de Londres avec Watch Dogs Legion.",
+    "price": "5.79",
+    "image": "./assets/img/Watch_Dogs_Legion.jpg"
+  }
+]

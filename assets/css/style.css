@@ -1,0 +1,446 @@
+/* PRÉCHARGER LES TYPOGRAPHIES */
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url(./assets/fonts/Poppins/Poppins-Bold.ttf);
+}
+
+/* STYLE DE BASE */
+
+body {
+  margin: 0;
+  font-size: 16px;
+  flex-direction: column;
+  background-color: #ecf0f1;
+  font-family: "Poppins-Semi-Bold", sans-serif;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+main {
+  grid-row: 2;
+  position: relative;
+}
+
+/* HEADER */
+header {
+  background-color: #333; /* Bleu */
+  color: #fff;
+  top: 0;
+  z-index: 1000;
+  font-family: "Poppins-Bold", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  grid-row: 1;
+}
+
+/* Barre de recherche */
+#searchBar {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 5px;
+}
+
+#searchInput {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #666;
+  color: #fff;
+  font-family: "Poppins-Bold", sans-serif;
+  width: 300px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#searchInput::placeholder {
+  color: #ccc;
+}
+
+#searchInput:focus {
+  outline: none;
+  background-color: #888;
+  color: #fff;
+}
+
+/* NAVIGATION */
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+ul li {
+  margin-right: 20px;
+}
+
+.clickable {
+  text-decoration: none !important;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.clickable:hover {
+  color: #e74c3c;
+}
+
+.quick-links {
+  display: flex;
+  justify-content: center;
+}
+
+.link-center {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+/* CONTENTENU DE LA PAGE PRINCIPALE */
+.index {
+  text-align: center;
+  margin-top: 126px;
+  margin-bottom: 126px;
+}
+
+/* BOUTON */
+button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1em;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #333, #666);
+  color: #fff;
+  transition: transform 0.3s, background 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #666, #333);
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* SECTION PRINCIPALE */
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#gameList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#noGameFound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 999;
+}
+
+#noGameFound p {
+  font-size: 24px;
+}
+
+#searchNotification {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 999;
+}
+
+/* PRIX */
+.prices {
+  font-style: italic;
+}
+
+/* ARTICLE */
+article {
+  text-align: center;
+  margin: 20px;
+}
+
+article img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* HOVER D'IMAGES  */
+figure img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+figure:hover img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+/* Ajoutez la règle pour centrer le texte dans la colonne "Nom du Jeu" */
+.centered-text {
+  text-align: center;
+}
+
+/* STYLE DU TABLEAU */
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-table th,
+.cart-table td {
+  border: 1px solid #f2f2f2;
+  padding: 8px;
+}
+
+/* Suppression des contours du tableau */
+.cart-table th,
+.cart-table td {
+  border: none;
+  padding: 8px;
+}
+
+.cart-table th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.cart-table td {
+  text-align: center;
+}
+
+/* CONTENEUR DU TABLEAU */
+.cart-table-container {
+  overflow-x: auto;
+}
+
+/* CONTENEUR DU PRIX TOTAL */
+.total-price-container {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.total-price-container h1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Taille maximale pour les miniatures */
+.thumbnail {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+/* FOOTER */
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  grid-row: 3;
+}
+
+.content {
+  min-height: calc(100vh - 100px);
+  padding-bottom: 100px;
+}
+
+.contact-info,
+.quick-links {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
+
+.contact-info h2,
+.quick-links h2 {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 10px;
+}
+
+.contact-info p,
+.quick-links ul {
+  margin: 10px 0;
+}
+
+.quick-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quick-links ul li {
+  margin-bottom: 10px;
+}
+
+.quick-links ul li i {
+  margin-right: 10px;
+}
+
+.quick-links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.quick-links ul li a:hover {
+  text-decoration: underline;
+}
+
+/* FORMULAIRE DE CONTACT */
+.contact-form {
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.form-title {
+  margin-bottom: 20px;
+}
+
+.input-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+/* Styles ajustés pour les inputs et le textarea */
+.form-input,
+textarea.form-input {
+  font-family: "Poppins-Semi-Bold", sans-serif;
+  text-align: center;
+  line-height: 1.5;
+  color: var(--white-2);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-400);
+  padding: 13px 20px;
+  border: 1px solid var(--jet);
+  border-radius: 14px;
+  outline: none;
+  transition: var(--transition-1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-input::placeholder {
+  font-weight: var(--fw-500);
+}
+
+.form-input:focus {
+  border-color: var(--orange-yellow-crayola);
+}
+
+/* Ajustements spécifiques pour le textarea */
+textarea.form-input {
+  min-height: 125px;
+  max-height: 200px;
+  resize: none;
+}
+
+textarea.form-input::-webkit-resizer {
+  display: none;
+}
+
+.form-input:focus:invalid {
+  border-color: var(--bittersweet-shimmer);
+}
+
+/* Styles pour le bouton */
+.form-btn {
+  font-family: "Poppins-Semi-Bold", sans-serif;
+  line-height: 1.5;
+  position: relative;
+  width: 100%;
+  background: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 20px;
+  border-radius: 14px;
+  font-size: var(--fs-6);
+  text-transform: capitalize;
+  box-shadow: var(--shadow-3);
+  z-index: 1;
+  transition: var(--transition-1);
+  box-sizing: border-box;
+}
+
+.form-btn::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+  transition: var(--transition-1);
+}
+
+.form-btn ion-icon {
+  font-size: 16px;
+}
+
+.form-btn:hover {
+  background: #333;
+}
+
+.form-btn:hover::before {
+  background: var(--bg-gradient-yellow-2);
+}
+
+.form-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.form-btn:disabled:hover {
+  background: var(--border-gradient-onyx);
+}
+
+.form-btn:disabled:hover::before {
+  background: var(--bg-gradient-jet);
+}
+
+/*  DESIGN RESPONSIVE */
+@media only screen and (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  ul {
+    margin-top: 10px;
+  }
+}
