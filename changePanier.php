@@ -1,21 +1,27 @@
 <?php
 session_start();
 
-if (isset($_POST['key'])) {
+if (isset($_POST['key'], $_POST['action'])) {
     $key = $_POST['key'];
+    $action = $_POST['action'];
 
-    if (isset($_POST['action']) && $_POST['action'] == 'delete') {
-        unset($_SESSION['panier'][$key]);
-    }
-    elseif (isset($_POST['quantity'])) {
-        $quantity = intval($_POST['quantity']);
-        if (isset($_SESSION['panier'][$key])) {
-            $_SESSION['panier'][$key]['quantity'] = $quantity;
-        }
+    switch ($action) {
+        case 'update':
+            if (isset($_POST['quantity'])) {
+                $quantity = intval($_POST['quantity']);
+                if ($quantity > 0) {
+                    $_SESSION['panier'][$key]['quantity'] = $quantity;
+                } else {
+                    // Optionnel : Gérer une quantité invalide (ex : afficher un message d'erreur)
+                }
+            }
+            break;
+        case 'delete':
+            unset($_SESSION['panier'][$key]);
+            break;
     }
 }
 
 header('Location: panier.php');
 exit;
-
 ?>

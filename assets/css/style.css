@@ -232,8 +232,7 @@ figure:hover img {
 }
 
 .cart-table th {
-  background-color: #f2f2f2;
-  text-align: left;
+  text-align: center;
 }
 
 .cart-table td {
@@ -432,6 +431,54 @@ textarea.form-input::-webkit-resizer {
 
 .form-btn:disabled:hover::before {
   background: var(--bg-gradient-jet);
+}
+
+/* Styles pour les inputs de type number */
+input[type="number"] {
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #666;
+  font-family: "Poppins-Bold", sans-serif;
+  width: 100px; /* Vous pouvez ajuster la largeur comme vous le souhaitez */
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+input[type="number"]::placeholder {
+  color: #ccc;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  background-color: #888;
+  color: #fff;
+}
+
+/* Si vous avez des labels pour vos inputs, vous pourriez également les styliser pour correspondre */
+label {
+  font-family: "Poppins-Semi-Bold", sans-serif;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Pour les navigateurs WebKit comme Safari et Chrome */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Pour Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Pour tous les navigateurs (qui supportent la propriété) */
+input[type="number"] {
+  appearance: none;
 }
 
 /*  DESIGN RESPONSIVE */

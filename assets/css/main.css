@@ -199,6 +199,7 @@ footer {
 
 #product__quantity {
   /* Style pour l'entrée de quantité du formulaire */
+  color: black;
   position: relative;
   padding: 1em 0.8em;
   max-width: 35%;
