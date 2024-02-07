@@ -450,22 +450,6 @@ footer {
     border-bottom: solid 1px rgba(241, 241, 241, 0.945);
   }
 
-  .top-header__left,
-  .top-header__right {
-    margin: 0;
-    padding: 0;
-  }
-
-  .nav-btn {
-    display: none;
-  }
-
-  .top-header__left .main-nav {
-    display: inline-block;
-    position: static;
-    padding-left: 2em;
-  }
-
   .main-nav__links {
     display: flex;
     align-items: flex-start;
@@ -488,15 +472,6 @@ footer {
     height: 3px;
     background-color: transparent;
     transition: background-color 0.5s ease-in;
-  }
-
-  .top-header__left .main-nav,
-  .main-nav__content-container {
-    transform: none;
-    height: auto;
-    width: auto;
-    z-index: auto;
-    background-color: transparent;
   }
 
   .main-nav__close-btn {
