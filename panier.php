@@ -40,7 +40,8 @@
                 echo "<button type='submit' name='action' value='update' class='update-item-btn' style='display: none;'>Mettre à jour</button>";
                 echo "</td>";
                 echo "<td class='product-price'>" . $product_price * $product_quantity . "€</td>";
-                echo "<td class='product-remove'><button type='submit' name='action' value='delete' class='remove-item-btn'>Supprimer</button></td>";
+                
+                echo "<td class='product-remove'><button type='submit' name='action' value='delete' class='remove-item-btn'><i class='fa-solid fa-trash'></i> &nbsp Supprimer</button></td>";
                 echo "</form>";
                 echo "</tr>";
                 $total_price += $product_price * $product_quantity;
